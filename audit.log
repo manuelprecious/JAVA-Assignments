@@ -1,0 +1,30 @@
+-----------------------------------------
+Timestamp: 2025-06-23 14:46:20
+Context: Fund Transfer Validation (Insufficient Balance)
+Exception Type: java.lang.ArithmeticException
+Message: Insufficient balance for transfer. Current balance: $10.00, Transfer requested: $20.00
+Stack Trace:
+java.lang.ArithmeticException: Insufficient balance for transfer. Current balance: $10.00, Transfer requested: $20.00
+	at fundTransfer.Account.transferFunds(Account.java:60)
+	at fundTransfer.FundTransferSimulator.main(FundTransferSimulator.java:56)
+------------------------------------------
+-----------------------------------------
+Timestamp: 2025-06-24 08:59:10
+Context: Fund Transfer Validation (Insufficient Balance)
+Exception Type: java.lang.ArithmeticException
+Message: Insufficient balance for transfer. Current balance: $100.00, Transfer requested: $200.00
+Stack Trace:
+java.lang.ArithmeticException: Insufficient balance for transfer. Current balance: $100.00, Transfer requested: $200.00
+	at fundTransfer.Account.transferFunds(Account.java:55)
+	at fundTransfer.FundTransferSimulator.main(FundTransferSimulator.java:56)
+------------------------------------------
+-----------------------------------------
+Timestamp: 2025-06-24 08:59:46
+Context: Fund Transfer Validation (Maximum Limit Exceeded)
+Exception Type: java.lang.SecurityException
+Message: Transfer amount $12000.00 exceeds the maximum limit of $10000.00.
+Stack Trace:
+java.lang.SecurityException: Transfer amount $12000.00 exceeds the maximum limit of $10000.00.
+	at fundTransfer.Account.transferFunds(Account.java:61)
+	at fundTransfer.FundTransferSimulator.main(FundTransferSimulator.java:56)
+------------------------------------------
